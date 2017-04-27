@@ -1,15 +1,22 @@
 {
-  "name": "boilerplate",
-  "version": "1.0.0",
+  "name": "nodejs-boilerplate",
+  "version": "1.0.0-alpha.1",
   "description": "Boilerplate for consistent project structures and maintenance.",
   "main": "index.js",
   "scripts": {
     "start": "npm i",
+    "nodemon": "./node_modules/.bin/nodemon",
+    "pm2": "./node_modules/.bin/pm2",
+    "fixtures": "echo \"No command specified\" && exit 0",
+
+    "lint": "npm run lint:eslint",
+    "lint:eslint": "./node_modules/.bin/eslint config/** server/**",
+
     "projectsheet": "open $npm_package_district01_projectsheet"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://bitbucket.org/district01/boilerplate.git"
+    "url": "git+https://bitbucket.org/district01/nodejs-boilerplate.git"
   },
   "author": "Fabian Meul <fabian.meul@district01.be>",
   "contributors": [
@@ -17,10 +24,15 @@
     "Thomas Bormans <thomas.bormans@district01.be>"
   ],
   "license": "ISC",
-  "homepage": "https://bitbucket.org/district01/boilerplate#readme",
+  "homepage": "https://bitbucket.org/district01/nodejs-boilerplate",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "@district01/eslint-config": "1.0.0-alpha.1",
+    "eslint": "3.19.0",
+    "nodemon": "1.11.0",
+    "pm2": "2.4.6"
+  },
   "district01": {
-    "projectsheet": "https://bitbucket.org/district01/boilerplate/overview"
+    "projectsheet": "https://bitbucket.org/district01/nodejs-boilerplate/overview"
   }
 }
