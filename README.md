@@ -3,20 +3,14 @@
 # Table of contents #
 
    * [[PROJECT-NAME]](#project-name)
-   * [Table of contents](#table-of-contents)
    * [Setup of the repository](#setup-of-the-repository)
       * [Guidelines for the owner](#guidelines-for-the-owner)
       * [Guidelines for all team members](#guidelines-for-all-team-members)
-   * [Best practices](#best-practices)
-      * [npm scripts](#npm-scripts)
    * [What is this repository for?](#what-is-this-repository-for)
    * [How do I get set up?](#how-do-i-get-set-up)
    * [Which scripts are available?](#which-scripts-are-available)
    * [Contribution guidelines](#contribution-guidelines)
    * [Who do I talk to?](#who-do-i-talk-to)
-   * [Contributing to the boilerplate](#contributing-to-the-boilerplate)
-      * [Create an issue](#create-an-issue)
-      * [Open pull request](#open-pull-request)
 
 # Setup of the repository #
 
