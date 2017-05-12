@@ -2,10 +2,10 @@ require("rootpath")();
 const glob = require("glob");
 
 module.exports = (app) => {
-	glob("server/routes/!(index).js", (err, items) => {
-		items.forEach(item => {
-			require(item)(app);
-		});
+	const routes = glob.sync("server/routes/!(index).js");
+
+	routes.forEach(route => {
+		require(route)(app);
 	});
 
 	// Fallback route
