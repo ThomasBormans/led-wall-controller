@@ -2,16 +2,14 @@
   "name": "nodejs-boilerplate",
   "version": "1.0.0-alpha.1",
   "description": "Boilerplate for consistent project structures and maintenance.",
-  "main": "index.js",
+  "main": "server/app.js",
   "scripts": {
     "start": "npm i",
     "nodemon": "./node_modules/.bin/nodemon",
     "pm2": "./node_modules/.bin/pm2",
     "fixtures": "echo \"No command specified\" && exit 0",
-
     "lint": "npm run lint:eslint",
     "lint:eslint": "./node_modules/.bin/eslint config/** server/**",
-
     "projectsheet": "open $npm_package_district01_projectsheet"
   },
   "repository": {
@@ -25,9 +23,19 @@
   ],
   "license": "ISC",
   "homepage": "https://bitbucket.org/district01/nodejs-boilerplate",
-  "dependencies": {},
+  "dependencies": {
+    "body-parser": "1.17.1",
+    "cookie-parser": "1.4.3",
+    "express": "4.15.2",
+    "express-session": "1.15.2",
+    "glob": "7.1.1",
+    "helmet": "3.6.0",
+    "lodash": "4.17.4",
+    "rootpath": "0.1.2",
+    "session-file-store": "1.0.0"
+  },
   "devDependencies": {
-    "@district01/eslint-config": "1.0.0-alpha.1",
+    "@district01/eslint-config": "1.0.0-alpha.2",
     "eslint": "3.19.0",
     "nodemon": "1.11.0",
     "pm2": "2.4.6"

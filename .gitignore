@@ -259,4 +259,5 @@ jspm_packages
 # Project-specific
 # --------------------------------------------------------------------------- /
 
-
+# Sessions on the filesystem
+.sessions
