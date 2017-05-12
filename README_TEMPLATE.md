@@ -117,6 +117,6 @@ List the team that has worked on this project, including the duration e.g.:
 * [Fabian Meul - District01](fabian.meul@district01.be)
     * **Function**: Lead Front-End Dev
     * **Period**: October 2017 -> December 2017
-* [Thomas Bormans - District01](fabian.meul@district01.be)
+* [Thomas Bormans - District01](thomas.bormans@district01.be)
     * **Function**: Lead Technical Dev
     * **Period**: October 2017 -> December 2017
