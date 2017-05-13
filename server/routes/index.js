@@ -3,9 +3,7 @@ const glob = require("glob");
 const version = require("package.json").version;
 
 module.exports = (app) => {
-	const routes = glob.sync("server/routes/!(index).js");
-
-	routes.forEach(route => {
+	glob.sync("server/routes/!(index).js").forEach(route => {
 		require(route)(app);
 	});
 
