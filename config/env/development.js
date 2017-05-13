@@ -1,6 +1,6 @@
 module.exports = {
 	server: {
-		port: 3050,
+		port: 3000,
 		cookies: {
 			domain: "",
 		},
