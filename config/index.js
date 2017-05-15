@@ -3,9 +3,9 @@
 // Project-wide configuration
 
 require("rootpath")();
-let _ = require("lodash");
+const merge = require("lodash.merge");
 
-module.exports = _.merge(
+module.exports = merge(
 	require("./general"),
 	require("./env/" + process.env.NODE_ENV.toLowerCase() + ".js")
 );
