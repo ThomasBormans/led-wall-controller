@@ -36,7 +36,7 @@
     "session-file-store": "1.0.0"
   },
   "devDependencies": {
-    "@district01/eslint-config": "1.0.0-alpha.2",
+    "@district01/eslint-config": "1.0.0",
     "eslint": "3.19.0",
     "eslint-plugin-chai-friendly": "0.3.6",
     "nodemon": "1.11.0",
