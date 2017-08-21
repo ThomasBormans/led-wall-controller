@@ -1,3 +1,4 @@
+const config = require(process.env.PWD + "/config");
 const sharp = require("sharp");
 
 const parse = (response) => {
@@ -23,8 +24,11 @@ const map = (response) => {
 	}, [[]]);
 };
 
-module.exports = (path, width, height) => {
+module.exports = (path) => {
 	return new Promise((resolve, reject) => {
+		const width = config.wall.panels.width * config.wall.panels.pixels;
+		const height = config.wall.panels.height * config.wall.panels.pixels;
+
 		sharp(path)
 			.resize(width, height)
 			.raw()

@@ -10,4 +10,12 @@ module.exports = {
 			secret: "My$€cr€T",
 		},
 	},
+	wall: {
+		panels: {
+			width: 1,
+			height: 1,
+			pixels: 18,
+		},
+		strips: 2,
+	},
 };
