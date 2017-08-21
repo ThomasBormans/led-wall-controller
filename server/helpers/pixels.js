@@ -14,7 +14,7 @@ const parse = (response) => {
 	}
 };
 
-const map = (response) => {
+const group = (response) => {
 	return response.reduce(function(a, b, c) {
 		if (c % 4 === 0 && c !== 0) {
 			a.push([]);
@@ -34,7 +34,7 @@ module.exports = (path) => {
 			.raw()
 			.toBuffer()
 			.then(parse)
-			.then(map)
+			.then(group)
 			.then(resolve)
 			.catch(reject);
 	});
