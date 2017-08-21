@@ -15,7 +15,7 @@ const parse = (response) => {
 
 const map = (response) => {
 	return response.reduce(function(a, b, c) {
-		if (c % 4 == 0 && c !== 0) {
+		if (c % 4 === 0 && c !== 0) {
 			a.push([]);
 		}
 		a[a.length - 1].push(b);
