@@ -28,6 +28,8 @@ const config = require("config");
 // Init middleware
 require("./middleware")(app);
 
+require("./controllers/leds/init");
+
 // Init routes
 require("./routes/")(app);
 
